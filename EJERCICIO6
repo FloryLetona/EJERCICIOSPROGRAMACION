@@ -1,0 +1,9 @@
+<script type="text/javascript">
+  var selec=prompt('Ingrese un valor entre 1 y 10','');
+  selec=parseInt(selec); 
+  var num=parseInt(Math.random()*10)+1;
+  if (num==selec)
+    document.write('Buen Trabajo '+ num);
+  else
+    document.write('No corresponde el numero correcto es: '+num+' y usted eligió el '+selec); 
+</script>
