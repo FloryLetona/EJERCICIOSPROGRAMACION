@@ -1,0 +1,19 @@
+<script>
+function convert(grados) {
+    if (grados == "C") {
+        F = document.getElementById("c").value * 9 / 5 + 32;
+        document.getElementById("f").value =Math.round(F);
+    } else {
+        C = (document.getElementById("f").value -32) * 5 / 9;
+        document.getElementById("c").value =Math.round(C);
+    }
+}
+</script>
+<body>
+<p>
+INGRESE LA CANTIDAD DE CELSIUS QUE DECEA CALCULAR:</p>
+<input id="c" onkeyup="convert('C')"> grados Celsius<br>
+Es Igual<br>
+<input id="f" onkeyup="convert('F')"> grados Fahrenheit
+
+</body>
