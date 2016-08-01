@@ -1,0 +1,26 @@
+<script>	
+	function Division()
+	{
+				var valorA = parseInt(prompt('Dame el valor A:'));
+		var valorB = parseInt(prompt('Dame valor B:'));
+		var resultado=valorA / valorB; 
+		document.getElementById('resultado').value = (valorA+"  +  " + valorB + " = " + resultado);
+	}
+	
+	function Multiplicacion()
+	{
+	            var valorA = parseInt(prompt('Dame el valor A:'));
+		var valorB = parseInt(prompt('Dame valor B:'));
+		var resultado=valorA * valorB;
+		document.getElementById('resultado').value = (valorA+"  *  " + valorB + " = " + resultado);
+	}	
+</script>
+<title>Funciones de división y multiplicación</title>
+
+
+<body>
+	<p>Resultado:      
+	<input name="resultado" type="text" id="resultado" size="30" align="right"/>
+</p>
+	  <input type="button" name="btn_multi" id="btn_multi" value="Division" onClick="Division()" />
+      <input type="button" name="btn_multi" id="btn_multi" value="Multiplicacion" onClick="Multiplicacion()"/>
